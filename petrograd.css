@@ -59,22 +59,32 @@ height: 100%;
     background-image: url("img/logoPetrograd-01.svg");
     background-repeat: no-repeat center center;
     background-size: auto;
-    position: absolute;
+    position: relative;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 300px;
     height: 75px;
-    left: 22px;
-    margin-top: 20px;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -150px;
     }
+
+.blackline {
+    height: 4px;
+    background-color:#000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
 
 
 
 
 .dish{
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 22px;
     border-style: double;
     border-width: thick;
@@ -83,7 +93,7 @@ height: 100%;
 
 
 .dishtext{
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 22px;
     border-width: thick;
     }
@@ -91,11 +101,12 @@ height: 100%;
 
 .daysdish{
     background-image: url("img/petroimgs/imgs/large/bulgarskbondesuppe.jpg");
+    background-repeat: no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 300px;
+    height: 250px;
     margin-bottom: 15px;
     border-style:solid;
     border-width:medium;
