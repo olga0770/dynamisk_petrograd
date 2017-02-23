@@ -65,7 +65,7 @@ height: 100%;
     -o-background-size: cover;
     background-size: cover;
     width: 300px;
-    height: 75px;
+    height: 110px;
     left: 50%;
     margin-top: 0px;
     margin-left: -150px;
@@ -76,8 +76,8 @@ height: 100%;
     background-color:#000000;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 
@@ -85,16 +85,17 @@ height: 100%;
 
 .dish{
     margin-top: 30px;
-    margin-left: 22px;
+    margin-bottom: 80px;
+    margin-left: 0px;
     border-style: double;
     border-width: thick;
     padding-bottom: 20px;
+    text-align: center;
     }
 
 
 .dishtext{
-    margin-top: 10px;
-    margin-left: 22px;
+    margin-top: 30px;
     border-width: thick;
     }
 
@@ -120,9 +121,16 @@ height: 100%;
     }
 
 
-#cafe2 {
-margin-bottom: 100px;
-}
+
+.udsolgt {
+    text-decoration: line-through;}
+
+h3 {
+    text-decoration: underline;}
+
+.rabatpris{
+text-decoration: underline;}
+
 
 
 
