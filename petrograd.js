@@ -48,8 +48,50 @@ function visProdukt( produkt ) {
 
 
     //append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
-    }
+//    document.querySelector(".produktliste").appendChild(klon);
+
+    console.log("." + produkt.kategori)
+
+//    if(produkt.kategori == 'forretter'){
+//        document.querySelector(".forretter").appendChild(klon);
+//    } else if(produkt.kategori == 'hovedretter'){
+//        document.querySelector(".hovedretter").appendChild(klon);
+//    }
+
+    document.querySelector("." + produkt.kategori).appendChild(klon);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

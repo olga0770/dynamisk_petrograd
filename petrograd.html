@@ -118,9 +118,9 @@ data-target="#myModal">
 <section class="row">
 
 <div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 col-md-8 col-md-push-2 dish">
-<h2>VORES MENUKORT</h2>
 
-<div class="row produktliste">
+<div class="row forretter">
+<h2>FORRETTER</h2>
 
 <template id="produkt_template">
 
@@ -143,8 +143,10 @@ data-target="#myModal">
 </div>
 
 </template>
-
 </div>
+
+
+
 </div>
 </section>
 </div>
@@ -152,55 +154,101 @@ data-target="#myModal">
 
 
 
-
-<!-- Hovedretter starter her -->
 <section id="hovedretter">
+<div class="container">
+<section class="row">
+<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 col-md-8 col-md-push-2 dish">
+<div class="row hovedretter">
+<h2>HOVEDRETTER</h2>
+</div>
+</div>
+</section>
+</div>
+</section>
+
+
+
+<section id="desserter">
+<div class="container">
+<section class="row">
+<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 col-md-8 col-md-push-2 dish">
+<div class="row desserter">
+<h2>DESSERTER</h2>
+</div>
+</div>
+</section>
+</div>
+</section>
+
+
+
+<section id="sideorders">
 
 <div class="container">
 <section class="row">
 
 <div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 col-md-8 col-md-push-2 dish">
-<h2>HOVEDRETTER</h2>
 
-<div class="col-xs-12 col-sm-6 col-md-6">
-<img class="img-responsive data_billede" src="img/petroimgs/imgs/small/russisktapas-sm.jpg" alt="img">
-<h4 class="data_navn">Russisk<br>Tapas</h4>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-default modalknap" data-toggle="modal"
-data-target="#myModal">
- Se detaljer
-</button>
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-6">
-<img class="img-responsive data_billede" src="img/petroimgs/imgs/small/moldaviskfiskesuppe-sm.jpg" alt="img">
-<h4 class="data_navn">Moldavisk fiskesuppe</h4>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-default modalknap" data-toggle="modal"
-data-target="#myModal">
- Se detaljer
-</button>
-</div>
-
-<div class="clearfix vizible-sm-block vizible-md-block"></div>
-
-<div class="col-xs-12 col-sm-6 col-md-6">
-<img class="img-responsive data_billede" src="img/petroimgs/imgs/small/bulgarskbondesuppe-sm.jpg" alt="img">
-<h4 class="data_navn">Bulgarsk bondesuppe</h4>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-default modalknap" data-toggle="modal"
-data-target="#myModal">
- Se detaljer
-</button>
+<div class="row sideorders">
+<h2>SIDE ORDERS</h2>
 </div>
 
 </div>
 </section>
 </div>
 </section>
+
+
+
+
+<section id="drikkevarer">
+
+<div class="container">
+<section class="row">
+
+<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 col-md-8 col-md-push-2 dish">
+
+<div class="row drikkevarer">
+<h2>DRIKKEVARER</h2>
+</div>
+
+</div>
+</section>
+</div>
+</section>
+
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span
+aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Se detaljer</h4>
+    </div>
+
+<div class="modal-body">
+<p>
+Navn: <span class="data_navn">navn</span><br>
+Beskrivelse: <span class="data_beskrivelse">beskrivelse</span><br>
+Pris: <span class="data_pris">pris</span><br>
+Udsolgtstatus: <span class="data_udsolgtstatus">udsolgtstatus</span><br>
+Rabat-pris: <span class="data_rabatpris">rabatpris</span><br>
+Vegetar-egnethed: <span class="data_vegetaregnethed">vegetaregnethed</span><br>
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
 
 
 
