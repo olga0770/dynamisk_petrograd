@@ -136,12 +136,31 @@ data-target="#myModal">
 <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-default modalknap" data-toggle="modal"
-data-target="#myModal">
- Se detaljer
-</button>
+<button data-id="UDSKIFT_MIG" type="button" class="btn btn-default modalknap" data-toggle="modal"
+data-target="#myModal">Se detaljer</button>
+
+
+<!-- Modal -->
+<!--<template  id="modal_template">-->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Se detaljer</h4>
+    </div>
+
+<div class="modal-body">
+<p></p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Luk</button></div>
+</div>
+</div>
 </div>
 
+</div>
 </template>
 </div>
 
@@ -219,31 +238,8 @@ data-target="#myModal">
 
 
 
-<!-- Modal -->
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span
-aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Se detaljer</h4>
-    </div>
 
-<div class="modal-body">
-<p>
-Navn: <span class="data_navn">navn</span><br>
-Beskrivelse: <span class="data_beskrivelse">beskrivelse</span><br>
-Pris: <span class="data_pris">pris</span><br>
-Udsolgtstatus: <span class="data_udsolgtstatus">udsolgtstatus</span><br>
-Rabat-pris: <span class="data_rabatpris">rabatpris</span><br>
-Vegetar-egnethed: <span class="data_vegetaregnethed">vegetaregnethed</span><br>
-</p>
-</div>
-
-</div>
-</div>
-</div>
 
 
 

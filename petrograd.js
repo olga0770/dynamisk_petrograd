@@ -29,6 +29,25 @@ function visProdukt( produkt ) {
 
     klon.querySelector(".data_billede").src = "/img/petroimgs/imgs/small/" + produkt.billede + "-sm.jpg";
 
+
+
+
+
+
+
+klon.querySelector('button').dataset.id = produkt.id;
+klon.querySelector('button').addEventListener('click', modalKnapKlik)
+
+
+
+
+
+
+
+
+
+
+
     if( produkt.udsolgt == false ){
     //produktet er ikke udsolgt
     //udsolgttekst skal fjernes
@@ -47,10 +66,13 @@ function visProdukt( produkt ) {
     }
 
 
+
+
+
     //append klon til .produkt_liste
 //    document.querySelector(".produktliste").appendChild(klon);
 
-    console.log("." + produkt.kategori)
+//    console.log("." + produkt.kategori)
 
 //    if(produkt.kategori == 'forretter'){
 //        document.querySelector(".forretter").appendChild(klon);
@@ -61,17 +83,30 @@ function visProdukt( produkt ) {
     document.querySelector("." + produkt.kategori).appendChild(klon);
 
 
-
-
-
 }
 
 
 
 
 
+function modalKnapKlik(oplysningerOmEventet){
+    var produktId = oplysningerOmEventet.target.dataset.id;
 
 
+// 1 send forespørgsel til
+// http://petlatkea.dk/2017/dui/api/product?callback=?&id=21
+// med det rigtige id
+
+$.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id="+produktId, visModalIndhold);
+}
+
+
+function visModalIndhold(mereInfo){
+    console.log(mereInfo)
+
+document.querySelector('#myModalLabel').textContent=mereInfo.navn;
+document.querySelector('#myModal .modal-body p').textContent=mereInfo.langbeskrivelse;
+}
 
 
 
