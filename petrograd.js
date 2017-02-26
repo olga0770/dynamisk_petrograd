@@ -123,13 +123,3 @@ document.querySelector('#myModal .modal-body p').textContent=mereInfo.langbeskri
 
 
 
-
-
-
-
-
-
-
-
-
-

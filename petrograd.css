@@ -71,14 +71,43 @@ height: 100%;
     margin-left: -150px;
     }
 
-.blackline {
-    height: 4px;
-    background-color:#000000;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
+
+.menu{
+    background-image: url("img/menu-01.svg");
+    background-repeat: no-repeat center center;
+    background-size: auto;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 360px;
+    height: 31px;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -180px;
+    }
+
+/*
+.vegetar{
+    background-image: url("img/vegetar.svg");
+    background-repeat: no-repeat center center;
+    background-size: auto;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 200px;
+    height: 30px;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -100px;
+    }
+*/
+
+
+
 
 
 
@@ -97,18 +126,19 @@ height: 100%;
 .dishtext{
     margin-top: 30px;
     border-width: thick;
+    text-align: center;
     }
 
 
-.daysdish{
-    background-image: url("img/petroimgs/imgs/large/bulgarskbondesuppe.jpg");
+.splashimgage{
+    background-image: url("img/splash.jpg");
     background-repeat: no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 250px;
-    margin-bottom: 15px;
+    height: 400px;
+    margin-top: 18px;
     border-style:solid;
     border-width:medium;
     }
