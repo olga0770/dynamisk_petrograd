@@ -35,12 +35,24 @@ function visProdukt( produkt ) {
 
 
 
+
+
+
+
+
+
+
 klon.querySelector('button').dataset.id = produkt.id;
-klon.querySelector('button').addEventListener('click', modalKnapKlik)
+klon.querySelector('button').addEventListener('click', modalKnapKlik);
 
 
 
+//console.log(document.querySelector(".æ").dataset.id);
 
+//console.log(produkt.vegetar);
+
+//document.querySelector(".btnvegetar").dataset.id = produkt.vegetar;
+//document.querySelector(".btnvegetar").addEventListener('click', BtnVegetarKlik);
 
 
 
@@ -69,6 +81,9 @@ klon.querySelector('button').addEventListener('click', modalKnapKlik)
 
 
 
+
+
+
     //append klon til .produkt_liste
 //    document.querySelector(".produktliste").appendChild(klon);
 
@@ -92,21 +107,27 @@ klon.querySelector('button').addEventListener('click', modalKnapKlik)
 function modalKnapKlik(oplysningerOmEventet){
     var produktId = oplysningerOmEventet.target.dataset.id;
 
-
 // 1 send forespørgsel til
 // http://petlatkea.dk/2017/dui/api/product?callback=?&id=21
 // med det rigtige id
-
 $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id="+produktId, visModalIndhold);
 }
 
-
 function visModalIndhold(mereInfo){
-    console.log(mereInfo)
-
+    console.log(mereInfo);
 document.querySelector('#myModalLabel').textContent=mereInfo.navn;
 document.querySelector('#myModal .modal-body p').textContent=mereInfo.langbeskrivelse;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

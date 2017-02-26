@@ -144,6 +144,22 @@ height: 100%;
     }
 
 
+
+.map{
+
+    background-repeat: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    margin-top: 18px;
+    border-style:solid;
+    border-width:medium;
+    }
+
+
+
 .data_billede{
     border-style:solid;
     border-width:medium;
