@@ -104,6 +104,10 @@ klon.querySelector('button').addEventListener('click', modalKnapKlik);
 
 
 
+
+
+
+
 function modalKnapKlik(oplysningerOmEventet){
     var produktId = oplysningerOmEventet.target.dataset.id;
 
@@ -111,13 +115,36 @@ function modalKnapKlik(oplysningerOmEventet){
 // http://petlatkea.dk/2017/dui/api/product?callback=?&id=21
 // med det rigtige id
 $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id="+produktId, visModalIndhold);
+
 }
+
+
+function modalKnapKlik(e){
+
+document.querySelector('#myModalLabel').textContent="Loading...";
+document.querySelector('#myModal .modal-body p').textContent=".....";
+
+var produktId = e.target.dataset.id;
+
+$.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id="+produktId, visModalIndhold);
+}
+
+
 
 function visModalIndhold(mereInfo){
     console.log(mereInfo);
 document.querySelector('#myModalLabel').textContent=mereInfo.navn;
 document.querySelector('#myModal .modal-body p').textContent=mereInfo.langbeskrivelse;
 }
+
+
+
+
+
+
+
+
+
 
 
 
