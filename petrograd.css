@@ -144,6 +144,20 @@ height: 100%;
     }
 
 
+.table{
+    background-image: url("img/table.jpg");
+    background-repeat: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    margin-top: 18px;
+    border-style:solid;
+    border-width:medium;
+    }
+
+
 
 .map{
 
